@@ -1,0 +1,22 @@
+Column = 0
+Define a function mower_moving and run it until a cell does not exist:
+    While next cell exists:
+        check if next cell mowed:
+            If yes:
+                Move forward
+            If No:
+                Start Mower
+                Move forward
+                Stop mower
+Once cell does not exist:
+    If column count is even, turn right and check for existing cell
+        If next cell exists:
+            +1 to column count, move forward, and turn right again
+            Run mower_moving again
+    If column count is odd, turn left and check for existing cell
+        If cell exists:
+            +1 to row count and move forward and turn left again
+            Run mower_moving again
+    If after the turn and check cell does not exist:
+        End program
+
